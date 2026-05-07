@@ -33,7 +33,7 @@ function Menu() {
      <nav className="bg-black/20 backdrop-blur-md px-5 h-13 rounded-2xl flex items-center justify-between">
         <Link to="/"><img src={logo} alt="logo" className="h-6" /></Link>
 
-        <ul className="hidden md:flex gap-5 text-xs list-none absolute left-1/2 -translate-x-1/2">
+        <ul className="hidden menu:flex gap-5 text-xs list-none absolute left-1/2 -translate-x-1/2">
             {links.map((l) => (
             <li key={l.to}>
                 <Link to={l.to} className="text-white/70 hover:text-white transition-colors duration-150">
@@ -44,15 +44,15 @@ function Menu() {
         </ul>
 
         <div className="flex items-center gap-2">
-            <LangToggle className="hidden md:flex" />
-            <Link to="/mission" className="hidden md:block text-xs text-black bg-white py-2 px-4 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150">
+            <LangToggle className="hidden menu:flex" />
+            <Link to="/mission" className="hidden menu:block text-xs text-black bg-white py-2 px-4 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150">
             {lang === "fr" ? "Rejoindre le club" : "Join the club"}
             </Link>
             <button
             onClick={() => setOpen(!open)}
             aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
             aria-expanded={open}
-            className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
+            className="menu:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
             >
             <span className={`block w-5 h-px bg-white transition-all duration-200 ${open ? "rotate-45 translate-y-2" : ""}`} />
             <span className={`block w-5 h-px bg-white transition-all duration-200 ${open ? "opacity-0" : ""}`} />
@@ -61,7 +61,7 @@ function Menu() {
         </div>
     </nav>
 
-      <div className={`md:hidden fixed inset-0 bg-black/90 backdrop-blur-md z-50 transition-all duration-300 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+      <div className={`menu:hidden fixed inset-0 bg-black/90 backdrop-blur-md z-50 transition-all duration-300 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
         <div className="flex justify-between items-center px-6 h-16 border-b border-white/10">
           <img src={logo} alt="logo" className="h-6" />
           <div className="flex items-center gap-3">

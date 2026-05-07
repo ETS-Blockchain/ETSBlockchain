@@ -9,3 +9,7 @@
 @theme {
   --font-byzantium: "Byzantium", serif;
 }
+
+@theme {
+  --breakpoint-menu: 1075px;
+}
