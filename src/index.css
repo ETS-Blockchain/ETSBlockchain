@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Byzantium";
+  src: url("./assets/fonts/Byzantium.otf") format("opentype");
+  font-display: swap;
+}
+
+@theme {
+  --font-byzantium: "Byzantium", serif;
+}
