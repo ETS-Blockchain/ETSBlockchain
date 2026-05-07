@@ -33,7 +33,6 @@ function Menu() {
      <nav className="bg-black/20 backdrop-blur-md px-5 h-13 rounded-2xl flex items-center justify-between">
         <Link to="/"><img src={logo} alt="logo" className="h-6" /></Link>
 
-        {/* Centre absolu */}
         <ul className="hidden md:flex gap-5 text-xs list-none absolute left-1/2 -translate-x-1/2">
             {links.map((l) => (
             <li key={l.to}>
