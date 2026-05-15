@@ -54,7 +54,23 @@ const t = {
   },
 }
 
-function FormField({ label, placeholder, name, type = "text", isTextArea = false, required = true }) {
+interface FormFieldProps {
+  label: string;
+  placeholder: string;
+  name: string;
+  type?: string;
+  isTextArea?: boolean;
+  required?: boolean;
+}
+
+function FormField({ 
+  label, 
+  placeholder, 
+  name, 
+  type = "text", 
+  isTextArea = false, 
+  required = true 
+}: FormFieldProps) {
   const baseClasses = "bg-white/5 border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-white/30 transition-colors duration-150"
   return (
     <div className="flex flex-col gap-1.5">
@@ -107,9 +123,9 @@ function Contact() {
           <h1 className="font-byzantium text-white text-5xl md:text-7xl lg:text-8xl max-w-[20ch] leading-none">{tx.title}</h1>
           <p className="text-white/60 text-sm max-w-[52ch] leading-relaxed">{tx.subtitle}</p>
         </div>
-        <svg className="mt-20" width="32" height="32" opacity="50%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 9L12 16L5 9" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+            <svg className="opacity-50" width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M19 9L12 16L5 9" stroke="white" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
       </header>
 
       <main id="content" className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto px-6 py-20 items-start">
