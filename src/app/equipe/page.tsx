@@ -9,6 +9,7 @@ export default function Equipe() {
       role: "Président",
       linkedin: "https://www.linkedin.com/in/akhmadsarymsakov/",
       github: "https://github.com/cherieakmad",
+      image : "Akhmad.png"
     },
     {
       name: "Ahmed El Moudden",
@@ -16,7 +17,7 @@ export default function Equipe() {
       role: "Vice-président",
       linkedin: "https://www.linkedin.com/in/ahmed-el-moudden-ba3a2b203/",
       github: "https://github.com/D3mh4",
-      image: "...",
+      image: "Ahmed.jpeg",
     },
     {
       name: "Victor Efrem",
@@ -24,7 +25,7 @@ export default function Equipe() {
       role: "Chargé des communications",
       linkedin: "https://www.linkedin.com/in/victor-efrem/",
       github: "https://github.com/Akurasama",
-      image: "...",
+      image: "Victor.jpeg",
     },
     {
       name: "Élea Charier",
@@ -32,16 +33,8 @@ export default function Equipe() {
       role: "À determiner",
       linkedin: "https://www.linkedin.com/in/éléa-charier-477b81328/",
       github: "https://github.com/elea-c",
-      image: "...",
-    },
-    {
-      name: "Trez",
-      program: "Génie Logiciel",
-      role: "Trésorier",
-      linkedin: "https://www.linkedin.com/in/ahmed-el-moudden-ba3a2b203/",
-      github: "#",
-      image: "...",
-    },
+      image: "Elea.png",
+    }
   ];
 
   return (
@@ -73,13 +66,7 @@ export default function Equipe() {
             >
               {/* Profile Image / Placeholder */}
               <div className="w-32 h-32 rounded-full mb-6 overflow-hidden border border-white/20 bg-white/5 flex items-center justify-center">
-                {member.image && member.image !== "..." ? (
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
-                ) : (
-                  <span className="text-white/20 font-byzantium text-4xl">
-                    {member.name.charAt(0)}
-                  </span>
-                )}
+                <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
               </div>
 
               {/* Info */}

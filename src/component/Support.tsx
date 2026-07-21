@@ -12,7 +12,7 @@ export default function Support() {
         
         <div className="grid sm:grid-cols-3">
           
-          {/* Carte 1 : Étudiants (Sans bordure à gauche) */}
+          {/* Carte 1 : Étudiants */}
           <div className="flex flex-col text-left px-6 py-4 gap-6">
             <div className="flex-1">
               <h3 className="font-byzantium text-white text-3xl md:text-2xl">
@@ -22,15 +22,15 @@ export default function Support() {
                 Rejoignez une communauté de passionnés et développez vos compétences.
               </p>
             </div>
-            <Link 
-              href="#"
+            <a 
+              href="https://linktr.ee/byzantiumets"
               className="text-xs text-black bg-white py-2 px-4 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150 text-center"
             >
               Nous rejoindre
-            </Link>
+            </a>
           </div>
 
-          {/* Carte 2 : Entreprises (Avec bordure sm:border-l) */}
+          {/* Carte 2 : Entreprises */}
           <div className="flex flex-col text-left px-6 py-4 gap-6 sm:border-l border-white/10">
             <div className="flex-1">
               <h3 className="font-byzantium text-white text-3xl md:text-2xl">
@@ -41,14 +41,14 @@ export default function Support() {
               </p>
             </div>
             <Link 
-              href="/partenaires"
+              href="/contact"
               className="text-xs text-black bg-white py-2 px-4 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150 text-center"
             >
               Devenir partenaire
             </Link>
           </div>
 
-          {/* Carte 3 : Philanthropie (Avec bordure sm:border-l) */}
+          {/* Carte 3 : Philanthropie */}
           <div className="flex flex-col text-left px-6 py-4 gap-6 sm:border-l border-white/10">
             <div className="flex-1">
               <h3 className="font-byzantium text-white text-3xl md:text-2xl">

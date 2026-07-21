@@ -87,7 +87,7 @@ export default function Home() {
             <Link href="/mission" className="text-sm text-black bg-white py-2 px-5 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150">
               {text.mission}
             </Link>
-            <Link href="/partenaires" className="text-sm text-white bg-black py-2 px-5 rounded-lg hover:bg-gray-900 hover:scale-105 transition-all duration-150">
+            <Link href="/contact" className="text-sm text-white bg-black py-2 px-5 rounded-lg hover:bg-gray-900 hover:scale-105 transition-all duration-150">
               {text.partner}
             </Link>
           </div>
