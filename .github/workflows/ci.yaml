@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build-and-scan:
-    uses: clubcedille/cedille-workflows/.github/workflows/templates/build-and-scan.yaml@master
+    uses: clubcedille/cedille-workflows/.github/workflows/build-and-scan.yaml@master
     with:
       project-key: ets-blockchain
       project-name: ETS Blockchain
@@ -22,7 +22,7 @@ jobs:
 
   deploy:
     needs: build-and-scan
-    uses: clubcedille/cedille-workflows/.github/workflows/templates/deploy.yaml@master
+    uses: clubcedille/cedille-workflows/.github/workflows/deploy.yaml@master
     with:
       container-name: etsblockchain
       branch: main
