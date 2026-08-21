@@ -1,0 +1,1 @@
+export const imgSrc = (img: string | { src: string }) => typeof img === "string" ? img : img.src;

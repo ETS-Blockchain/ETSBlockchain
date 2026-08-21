@@ -23,7 +23,7 @@ export default function Support() {
               </p>
             </div>
             <a 
-              href="https://linktr.ee/byzantiumets"
+              href="https://linktr.ee/etsblockchain"
               className="text-xs text-black bg-white py-2 px-4 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150 text-center"
             >
               Nous rejoindre
@@ -59,7 +59,7 @@ export default function Support() {
               </p>
             </div>
             <Link 
-              href="#"
+              href="https://www.jedonneenligne.org/fdets/CLUBSDONSCIEN/?PersonalKey=1&FrmTrxType=Da%2FoFePL19ORosiL8yj7yA%3D%3D&FrmActUID5020=7k%2F2gfptO29%2BsQaCmkqTGg%3D%3D"
               className="text-xs text-black bg-white py-2 px-4 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150 text-center"
             >
               Faire un don

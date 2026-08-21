@@ -34,7 +34,7 @@ export default function Menu() {
         </ul>
 
         <div className="flex items-center gap-2">
-          <a href="https://linktr.ee/byzantiumets" className="hidden menu:block text-xs text-black bg-white py-2 px-4 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150">
+          <a href="https://linktr.ee/etsblockchain" className="hidden menu:block text-xs text-black bg-white py-2 px-4 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150">
             Rejoindre le club
           </a>
           <button
