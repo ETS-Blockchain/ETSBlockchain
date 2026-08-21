@@ -1,0 +1,30 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-scan:
+    uses: clubcedille/cedille-workflows/.github/workflows/build-and-scan.yaml@master
+    with:
+      project-key: ets-blockchain
+      project-name: ETS Blockchain
+      build-command: npm ci && npm run build
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  deploy:
+    needs: build-and-scan
+    uses: clubcedille/cedille-workflows/.github/workflows/deploy.yaml@master
+    with:
+      container-name: etsblockchain
+      branch: main
+    secrets:
+      GIT_AUTH_TOKEN: ${{ secrets.GHCR_PAT }}
