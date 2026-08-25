@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-export async function POST(request) {
+export async function POST(request: Request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await request.json();
@@ -17,12 +17,10 @@ export async function POST(request) {
 
     // Appel à l'API Resend
     const { data, error } = await resend.emails.send({
-      // L'adresse 'from' doit provenir d'un domaine que tu as vérifié sur Resend
-      from: "Site ÉTS Blockchain <onboarding@resend.dev>", 
-      // C'est ici que tu recevras le message
-      to: ["blockchain-ets@etsmtl.ca"], 
+      from: "Site ÉTS Blockchain <onboarding@resend.dev>",
+      to: ["blockchain-ets@etsmtl.ca"],
       subject: `Nouveau message de ${name}`,
-      replyTo: email, // Permet de faire "Répondre" directement à l'étudiant/partenaire
+      replyTo: email,
       html: `
         <h2>Nouveau message</h2>
         <p><strong>Nom :</strong> ${name}</p>
@@ -34,7 +32,6 @@ export async function POST(request) {
       `,
     });
 
-    // Si Resend retourne une erreur (ex: domaine non vérifié, quota dépassé)
     if (error) {
       console.error("Erreur Resend :", error);
       return NextResponse.json(
@@ -43,12 +40,10 @@ export async function POST(request) {
       );
     }
 
-    // Succès de l'envoi
     return NextResponse.json(
       { success: true, data },
       { status: 200 }
     );
-
   } catch (error) {
     console.error("Erreur serveur :", error);
     return NextResponse.json(
@@ -57,3 +52,4 @@ export async function POST(request) {
     );
   }
 }
+

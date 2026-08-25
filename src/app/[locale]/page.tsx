@@ -1,37 +1,34 @@
-import Link from "next/link";
-import Hero from "../component/Hero";
-import SocialLinks from "../component/SocialLinks";
-import ETS from "../assets/ETS.png";
-import logo from "../assets/logo.svg";
-import Bitcoin from "../assets/Bitcoin.png";
-import Ethereum from "../assets/Ethereum.png";
-import { imgSrc } from "../lib/utils";
+"use client";
 
-const text = {
-  title: "L'ingénierie au service de la blockchain",
-  mission: "Notre mission",
-  partner: "Devenir partenaire",
-  projects: "Découvrez nos projets",
-  contact: "Nous contacter",
-};
+import { useTranslations } from "next-intl";
+import { Link } from "../../i18n/routing";
+import Hero from "../../component/Hero";
+import SocialLinks from "../../component/SocialLinks";
+import ETS from "../../assets/ETS.png";
+import logo from "../../assets/logo.svg";
+import Bitcoin from "../../assets/Bitcoin.png";
+import Ethereum from "../../assets/Ethereum.png";
+import { imgSrc } from "../../lib/utils";
 
 const floatingcryptos = [
   // Bitcoin — grand, haut gauche
-  { src: "bitcoin", alt: "Bitcoin", size: "w-28 sm:w-40 md:w-48 lg:w-60", position: "top-[16%] lg:top-[8%] left-[-5%]", animation: "animate-float-a", rotate: "-rotate-12", opacity: "opacity-100", z: "z-0" },
+  { src: "bitcoin", alt: "Bitcoin", size: "w-28 sm:w-40 md:w-48 lg:w-60", position: "top-[11%] lg:top-[8%] left-[-5%]", animation: "animate-float-a", rotate: "-rotate-12", opacity: "opacity-100", z: "z-10" },
   // Bitcoin — petit, bas gauche
   { src: "ethereum", alt: "Ethereum", size: "w-16 md:w-20", position: "bottom-[26%] left-[15%]", animation: "animate-float-c", rotate: "rotate-6", opacity: "opacity-60", z: "z-0" },
   // Ethereum — grand, droite milieu
-  { src: "ethereum", alt: "Ethereum", size: "w-20 sm:w-30 md:w-40 lg:w-50", position: "top-[38%] lg:top-[45%] right-[-7%]", animation: "animate-float-b", rotate: "rotate-12", opacity: "opacity-100", z: "z-0" },
+  { src: "ethereum", alt: "Ethereum", size: "w-20 sm:w-30 md:w-40 lg:w-50", position: "top-[38%] lg:top-[45%] right-[-7%]", animation: "animate-float-b", rotate: "rotate-12", opacity: "opacity-100", z: "z-10" },
   // Ethereum — petit, haut droite
-  { src: "ethereum", alt: "Ethereum", size: "w-12 md:w-16", position: "top-[10%] right-[12%]", animation: "animate-float-d", rotate: "-rotate-6", opacity: "opacity-50", z: "z-0" },
+  { src: "ethereum", alt: "Ethereum", size: "w-12 md:w-16", position: "top-[11%] right-[12%]", animation: "animate-float-d", rotate: "-rotate-6", opacity: "opacity-50", z: "z-0" },
   // Bitcoin — très petit, droite bas
   { src: "bitcoin", alt: "Bitcoin", size: "w-10 md:w-14", position: "sm:bottom-[18%] bottom-[32%] right-[5%] sm:right-[20%]", animation: "animate-float-a", rotate: "rotate-20", opacity: "opacity-40", z: "z-0" },
 ];
 
 export default function Home() {
+  const t = useTranslations("home");
+
   return (
     <>
-    <div className="min-h-screen w-screen bg-black">
+      <div className="min-h-screen w-screen bg-black">
         <style>{`
           @keyframes float-a {
             0%, 100% { transform: translateY(0px) rotate(-12deg); }
@@ -57,7 +54,7 @@ export default function Home() {
         `}</style>
 
         <Hero
-          title={text.title}
+          title={t("title")}
           showChevron={false}
           titleClassName="text-6xl md:text-7xl lg:text-9xl max-w-[22ch]"
           topContent={
@@ -69,11 +66,11 @@ export default function Home() {
           }
           actions={
             <div className="flex flex-col w-4/5 sm:flex-row sm:w-auto gap-3">
-              <Link href="/mission" className="text-sm text-black bg-white py-2 px-5 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150">
-                {text.mission}
+              <Link href="/mission" className="text-sm text-black bg-white py-2 px-5 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-150 text-center">
+                {t("missionBtn")}
               </Link>
-              <Link href="/contact" className="text-sm text-white bg-black py-2 px-5 rounded-lg hover:bg-gray-900 hover:scale-105 transition-all duration-150">
-                {text.partner}
+              <Link href="/contact" className="text-sm text-white bg-black py-2 px-5 rounded-lg hover:bg-gray-900 hover:scale-105 transition-all duration-150 text-center">
+                {t("partnerBtn")}
               </Link>
             </div>
           }
@@ -97,7 +94,7 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} className="text-white/50 shrink-0">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 13.5h7.5M13.5 18h7.5" />
               </svg>
-              <p className="text-white text-sm font-medium leading-tight">{text.projects}</p>
+              <p className="text-white text-sm font-medium leading-tight">{t("projectsCard")}</p>
             </Link>
 
             <div className="flex-1 border border-white/15 rounded-xl p-2 sm:p-4 flex items-center justify-around gap-3 hover:border-white/30 hover:bg-white/5 transition-all duration-200">
@@ -108,7 +105,7 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} className="text-white/50 shrink-0">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
               </svg>
-              <p className="text-white text-sm font-medium leading-tight">{text.contact}</p>
+              <p className="text-white text-sm font-medium leading-tight">{t("contactCard")}</p>
             </Link>
           </div>
         </Hero>
@@ -116,3 +113,4 @@ export default function Home() {
     </>
   );
 }
+

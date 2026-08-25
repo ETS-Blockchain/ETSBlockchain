@@ -1,49 +1,54 @@
-import Support from "../../component/Support";
-import Hero from "../../component/Hero";
-import Card from "../../component/Card";
-import { GithubIcon, LinkedinIcon } from "../../component/icons";
+"use client";
+
+import { useTranslations } from "next-intl";
+import Support from "../../../component/Support";
+import Hero from "../../../component/Hero";
+import Card from "../../../component/Card";
+import { GithubIcon, LinkedinIcon } from "../../../component/icons";
 
 export default function Equipe() {
+  const t = useTranslations("team");
+
   const equipe = [
     {
       name: "Akhmad Sarymsakov",
-      program: "Génie Logiciel",
-      role: "Président",
+      program: t("programs.software"),
+      role: t("roles.president"),
       linkedin: "https://www.linkedin.com/in/akhmadsarymsakov/",
       github: "https://github.com/cherieakmad",
-      image: "Akhmad.png",
+      image: "/Akhmad.png",
     },
     {
       name: "Ahmed El Moudden",
-      program: "Génie Logiciel",
-      role: "Vice-président",
+      program: t("programs.software"),
+      role: t("roles.vp"),
       linkedin: "https://www.linkedin.com/in/ahmed-el-moudden-ba3a2b203/",
       github: "https://github.com/D3mh4",
-      image: "Ahmed.jpeg",
+      image: "/Ahmed.jpeg",
     },
     {
       name: "Victor Efrem",
-      program: "Génie Électrique",
-      role: "Chargé des communications",
+      program: t("programs.electrical"),
+      role: t("roles.comms"),
       linkedin: "https://www.linkedin.com/in/victor-efrem/",
       github: "https://github.com/Akurasama",
-      image: "Victor.jpeg",
+      image: "/Victor.jpeg",
     },
     {
       name: "Élea Charier",
-      program: "Génie Logiciel",
-      role: "À determiner",
+      program: t("programs.software"),
+      role: t("roles.tbd"),
       linkedin: "https://www.linkedin.com/in/éléa-charier-477b81328/",
       github: "https://github.com/elea-c",
-      image: "Elea.png",
+      image: "/Elea.png",
     },
   ];
 
   return (
     <div className="min-h-screen w-screen bg-black text-white selection:bg-red-500/30">
       <Hero
-        title="Notre équipe"
-        description="Rencontrez les étudiants passionnés qui dirigent le pôle d'expertise en technologies décentralisées de l'École de technologie supérieure."
+        title={t("title")}
+        description={t("description")}
       />
 
       <section className="max-w-6xl mx-auto px-6 py-20">
@@ -81,3 +86,4 @@ export default function Equipe() {
     </div>
   );
 }
+

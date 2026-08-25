@@ -1,0 +1,104 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "mission": "Notre mission",
+    "projects": "Projets",
+    "team": "Équipe",
+    "partners": "Partenaires",
+    "contact": "Contact",
+    "join": "Rejoindre le club",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "toggleLang": "Changer de langue"
+  },
+  "home": {
+    "title": "L'ingénierie au service de la blockchain",
+    "missionBtn": "Notre mission",
+    "partnerBtn": "Devenir partenaire",
+    "projectsCard": "Découvrez nos projets",
+    "contactCard": "Nous contacter"
+  },
+  "mission": {
+    "eyebrow": "Notre mission",
+    "title": "Propulser l'innovation par la blockchain au sein de l'ÉTS.",
+    "description": "La technologie de la chaîne de blocs transforme rapidement notre façon d'interagir, de transiger et de concevoir des systèmes numériques. Pourtant, elle reste souvent entourée de complexité et de malentendus.",
+    "whoWeAreTitle": "Qui sommes-nous",
+    "whoWeAreText": "ETS Blockchain est le seul club étudiant spécialisé dans les technologies Web3 et Blockchain au Québec. Fondé en 2023, il n'est pas seulement un club étudiant : c'est le pôle d'expertise en technologies décentralisées de l'École de technologie supérieure.",
+    "ourVisionTitle": "Notre vision",
+    "ourVisionText": "Depuis l'émergence du Bitcoin en 2008, la blockchain a prouvé qu'elle pouvait redéfinir la confiance numérique à grande échelle. Notre objectif est de transformer la complexité de cette technologie en opportunités concrètes pour la communauté étudiante en génie.",
+    "pillarsTitle": "Nos piliers fondamentaux",
+    "learningTitle": "Apprentissage",
+    "learningDesc": "Développer les expertises Web3 à travers des ateliers techniques, des conférences d'experts et le partage de ressources pour les futurs ingénieurs.",
+    "networkingTitle": "Réseautage",
+    "networkingDesc": "Connecter la communauté étudiante avec les leaders de l'industrie, les protocoles majeurs et les fonds de VC pour favoriser l'insertion professionnelle.",
+    "competitionsTitle": "Compétitions",
+    "competitionsDesc": "Participer aux plus grands Hackathons mondiaux (ETH Global, ZkHack) afin de concevoir des solutions décentralisées concrètes et innovantes.",
+    "achievementsTitle": "Nos Réalisations",
+    "achievements": {
+      "zkHackTitle": "ZkHack Montréal",
+      "zkHackDesc": "Lauréats d'un prix d'excellence de Novanet. Une première entrée sur la scène de la cryptographie.",
+      "ethGlobalTitle": "ETH Global New York",
+      "ethGlobalDesc": "Participation à l'un des plus grands hackathons Ethereum au monde aux côtés des meilleurs développeurs.",
+      "comingSoon": "À suivre..."
+    }
+  },
+  "team": {
+    "title": "Notre équipe",
+    "description": "Rencontrez les étudiants passionnés qui dirigent le pôle d'expertise en technologies décentralisées de l'École de technologie supérieure.",
+    "programs": {
+      "software": "Génie Logiciel",
+      "electrical": "Génie Électrique"
+    },
+    "roles": {
+      "president": "Président",
+      "vp": "Vice-président",
+      "comms": "Chargé des communications",
+      "tbd": "À déterminer"
+    }
+  },
+  "projects": {
+    "title": "Nos projets"
+  },
+  "partners": {
+    "title": "Nos partenaires"
+  },
+  "common": {
+    "underMaintenance": "En maintenance..."
+  },
+  "support": {
+    "title": "Nous soutenir",
+    "description": "Vous souhaitez contribuer à l'essor de l'écosystème Web3 au Québec ou rejoindre l'aventure ? Découvrez comment vous impliquer :",
+    "studentsTitle": "Étudiants",
+    "studentsDesc": "Rejoignez une communauté de passionnés et développez vos compétences.",
+    "studentsBtn": "Nous rejoindre",
+    "companiesTitle": "Entreprises",
+    "companiesDesc": "Devenez un partenaire stratégique et accédez à notre bassin de talents.",
+    "companiesBtn": "Devenir partenaire",
+    "philanthropyTitle": "Philanthropie",
+    "philanthropyDesc": "Aidez-nous à financer nos projets de recherche et nos compétitions.",
+    "philanthropyBtn": "Faire un don"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contactez-nous!",
+    "description": "Une question, une idée ou simplement envie de rejoindre l'aventure ? On vous répond rapidement.",
+    "formTitle": "Envoyer un message",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Jean Tremblay",
+    "emailLabel": "Courriel",
+    "emailPlaceholder": "jean@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Bonjour, je voudrais...",
+    "submit": "Envoyer",
+    "submitting": "Envoi...",
+    "alternativeTitle": "Besoin d'une alternative ?",
+    "followTitle": "Suivez-nous",
+    "supportTitle": "Soutenez-nous",
+    "successTitle": "Succès",
+    "successMessage": "Message envoyé avec succès !",
+    "errorTitle": "Erreur",
+    "errorMessage": "Une erreur est survenue. Réessayez.",
+    "close": "Fermer"
+  }
+}
+

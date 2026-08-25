@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import Hero from "./Hero";
 
 interface MaintenancePageProps {
@@ -5,11 +8,13 @@ interface MaintenancePageProps {
 }
 
 export default function MaintenancePage({ title }: MaintenancePageProps) {
+  const t = useTranslations("common");
+
   return (
     <div className="min-h-screen w-screen bg-black">
       <Hero
         title={title}
-        description="En maintenance..."
+        description={t("underMaintenance")}
         showChevron={false}
         className="pb-16"
         titleClassName="text-5xl md:text-6xl lg:text-8xl"

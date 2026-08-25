@@ -1,0 +1,104 @@
+{
+  "menu": {
+    "home": "Home",
+    "mission": "Our Mission",
+    "projects": "Projects",
+    "team": "Team",
+    "partners": "Partners",
+    "contact": "Contact",
+    "join": "Join the club",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleLang": "Switch language"
+  },
+  "home": {
+    "title": "Engineering dedicated to blockchain",
+    "missionBtn": "Our mission",
+    "partnerBtn": "Become a partner",
+    "projectsCard": "Discover our projects",
+    "contactCard": "Contact us"
+  },
+  "mission": {
+    "eyebrow": "Our Mission",
+    "title": "Propelling blockchain innovation at ÉTS.",
+    "description": "Blockchain technology is rapidly transforming how we interact, transact, and design digital systems. Yet, it often remains surrounded by complexity and misunderstandings.",
+    "whoWeAreTitle": "Who we are",
+    "whoWeAreText": "ETS Blockchain is the only student club specialized in Web3 and Blockchain technologies in Quebec. Founded in 2023, it is not just a student club: it is the decentralized technology expertise hub of École de technologie supérieure.",
+    "ourVisionTitle": "Our vision",
+    "ourVisionText": "Since the emergence of Bitcoin in 2008, blockchain has proven it can redefine digital trust at scale. Our goal is to transform the complexity of this technology into concrete opportunities for the engineering student community.",
+    "pillarsTitle": "Our Core Pillars",
+    "learningTitle": "Learning",
+    "learningDesc": "Develop Web3 expertise through technical workshops, expert conferences, and resource sharing for future engineers.",
+    "networkingTitle": "Networking",
+    "networkingDesc": "Connect the student community with industry leaders, major protocols, and VC funds to foster professional integration.",
+    "competitionsTitle": "Competitions",
+    "competitionsDesc": "Participate in premier global Hackathons (ETH Global, ZkHack) to design concrete and innovative decentralized solutions.",
+    "achievementsTitle": "Our Achievements",
+    "achievements": {
+      "zkHackTitle": "ZkHack Montreal",
+      "zkHackDesc": "Winners of an excellence award from Novanet. A strong debut on the cryptography scene.",
+      "ethGlobalTitle": "ETH Global New York",
+      "ethGlobalDesc": "Participation in one of the world's largest Ethereum hackathons alongside top developers.",
+      "comingSoon": "To be continued..."
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "description": "Meet the passionate students leading the decentralized technology expertise hub at École de technologie supérieure.",
+    "programs": {
+      "software": "Software Engineering",
+      "electrical": "Electrical Engineering"
+    },
+    "roles": {
+      "president": "President",
+      "vp": "Vice President",
+      "comms": "Communications Lead",
+      "tbd": "To be determined"
+    }
+  },
+  "projects": {
+    "title": "Our Projects"
+  },
+  "partners": {
+    "title": "Our Partners"
+  },
+  "common": {
+    "underMaintenance": "Under maintenance..."
+  },
+  "support": {
+    "title": "Support Us",
+    "description": "Want to contribute to the growth of the Web3 ecosystem in Quebec or join the adventure? Discover how to get involved:",
+    "studentsTitle": "Students",
+    "studentsDesc": "Join a community of enthusiasts and develop your skills.",
+    "studentsBtn": "Join us",
+    "companiesTitle": "Companies",
+    "companiesDesc": "Become a strategic partner and access our talent pool.",
+    "companiesBtn": "Become a partner",
+    "philanthropyTitle": "Philanthropy",
+    "philanthropyDesc": "Help us fund our research projects and competitions.",
+    "philanthropyBtn": "Donate"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact Us!",
+    "description": "A question, an idea, or simply want to join the adventure? We will get back to you promptly.",
+    "formTitle": "Send a message",
+    "nameLabel": "Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Hello, I would like to...",
+    "submit": "Send",
+    "submitting": "Sending...",
+    "alternativeTitle": "Need an alternative?",
+    "followTitle": "Follow us",
+    "supportTitle": "Support us",
+    "successTitle": "Success",
+    "successMessage": "Message sent successfully!",
+    "errorTitle": "Error",
+    "errorMessage": "An error occurred. Please try again.",
+    "close": "Close"
+  }
+}
+
