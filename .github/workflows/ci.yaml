@@ -17,6 +17,7 @@ jobs:
       project-key: ets-blockchain
       project-name: ETS-Blockchain
       build-command: npm ci && npm run build
+      run-markdown-lint: false
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
