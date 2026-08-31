@@ -35,7 +35,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const isEn = locale === "en";
   return {
-    title: isEn ? "Byzantium ÉTS | Blockchain Club" : "Byzantium ÉTS | Club Blockchain",
+    title: "ÉTS Blockchain",
     description: isEn
       ? "Engineering dedicated to blockchain technology"
       : "L'ingénierie au service de la blockchain",
